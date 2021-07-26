@@ -1,0 +1,25 @@
+print("Welcome to the tip calculator!\n")
+
+
+total = float(input("What was the total bill? : $\n"))
+tip = int(input("What percentage tip would you like to give? 10%, 12%, 15%, or 20%:\n"))
+people = int(input("How many people to split the bill?: \n"))
+
+tip10 = ((total/100)*10)
+tip12 = ((total/100)*12)
+tip15 = ((total/100)*15)
+tip20 = ((total/100)*20)
+
+final10 = ((total+tip10)/people)
+final12 = ((total+tip12)/people)
+final15 = ((total+tip15)/people)
+final20 = ((total+tip20)/people)
+
+if tip == 10:
+    print("$", round(final10, 2))
+if tip == 12:
+    print("$", round(final12, 2))
+if tip == 15:
+    print("$", round(final15, 2))
+if tip == 20:
+    print("$", round(final20, 2))
